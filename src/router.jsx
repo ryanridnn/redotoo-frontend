@@ -22,7 +22,6 @@ const Routers = () => {
 			.then((res) => {
 				if (res.data.user) {
 					setUser(dispatch, res.data.user);
-					console.log(res.data.user);
 				} else {
 					removeUser(dispatch);
 				}
